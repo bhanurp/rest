@@ -6,7 +6,7 @@ import (
 
 type DeleteRequest struct{}
 
-func (d *DeleteRequest) Do(url string, headers map[string]string, timeout int) (*Response, error) {
+func (d *DeleteRequest) Do(url string, body []byte, headers map[string]string, timeout int) (*Response, error) {
 	req, err := http.NewRequest(http.MethodDelete, url, nil)
 	if err != nil {
 		return nil, err
