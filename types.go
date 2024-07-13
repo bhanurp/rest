@@ -1,4 +1,4 @@
-package client
+package rest
 
 type Client struct {
 	URL      string

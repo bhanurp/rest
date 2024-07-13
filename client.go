@@ -1,4 +1,4 @@
-package client
+package rest
 
 // NewClient creates a new Client struct with the provided URL and headers.
 // the default timeout is 30 seconds
